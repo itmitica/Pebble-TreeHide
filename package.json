@@ -14,24 +14,6 @@
         "resources": {
             "media": [
                 {
-                    "file": "fonts/kimberley.ttf",
-                    "name": "font_kimberley_24",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/kimberley.ttf",
-                    "name": "font_kimberley_38",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/Patinio.ttf",
-                    "name": "font_Patinio_14",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
                     "file": "images/wallpaper.png",
                     "name": "IMAGE_WALLPAPER",
                     "targetPlatforms": null,
@@ -54,6 +36,30 @@
                     "name": "IMAGE_SCREENFACE",
                     "targetPlatforms": null,
                     "type": "bitmap"
+                },
+                {
+                    "file": "fonts/kimberley.ttf",
+                    "name": "font_kimberley_44",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/kimberley.ttf",
+                    "name": "font_kimberley_24",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/kimberley.ttf",
+                    "name": "font_kimberley_38",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Patinio.ttf",
+                    "name": "font_Patinio_14",
+                    "targetPlatforms": null,
+                    "type": "font"
                 }
             ]
         },
@@ -66,5 +72,5 @@
             "watchface": true
         }
     },
-    "version": "1.0.0"
+    "version": "1.1.0"
 }
