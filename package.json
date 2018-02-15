@@ -20,18 +20,6 @@
                     "type": "bitmap"
                 },
                 {
-                    "file": "images/screenshot_watchface.png",
-                    "name": "IMAGE_SCREENSHOT_WATCHFACE",
-                    "targetPlatforms": null,
-                    "type": "bitmap"
-                },
-                {
-                    "file": "images/screenshot_screenface.png",
-                    "name": "IMAGE_SCREENSHOT_SCREENFACE",
-                    "targetPlatforms": null,
-                    "type": "bitmap"
-                },
-                {
                     "file": "images/screenface.png",
                     "name": "IMAGE_SCREENFACE",
                     "targetPlatforms": null,
