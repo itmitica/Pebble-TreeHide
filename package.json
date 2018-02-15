@@ -33,25 +33,7 @@
                 },
                 {
                     "file": "fonts/kimberley.ttf",
-                    "name": "font_kimberley_42",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/kimberley.ttf",
-                    "name": "font_kimberley_44",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/kimberley.ttf",
                     "name": "font_kimberley_24",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/kimberley.ttf",
-                    "name": "font_kimberley_38",
                     "targetPlatforms": null,
                     "type": "font"
                 },
