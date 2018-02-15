@@ -117,23 +117,23 @@ void main_window_load(Window *window) {
   s_res_image_screenface = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_SCREENFACE);
   
   // Wallpaper
-  Wallpaper = bitmap_layer_create(GRect(0, 0, 144, 168));
+  Wallpaper = bitmap_layer_create(GRect(0, 30, 144, 168));
   bitmap_layer_set_bitmap(Wallpaper, s_res_image_wallpaper);
   layer_add_child(window_get_root_layer(window), (Layer *)Wallpaper);
  
   // Date Text
-  DateText = text_layer_create(GRect(0, 45, 140, 46));
+  DateText = text_layer_create(GRect(0, 35, 140, 46));
   text_layer_set_background_color(DateText, GColorClear);
-  text_layer_set_text_color(DateText, GColorClear);
+  text_layer_set_text_color(DateText, GColorBlack);
   DateFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_kimberley_24));
   text_layer_set_font(DateText, DateFont);
   text_layer_set_text_alignment(DateText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DateText));
 
     // Day Text
-  DayText = text_layer_create(GRect(0, 78, 140, 26));
+  DayText = text_layer_create(GRect(0, 68, 140, 26));
   text_layer_set_background_color(DayText, GColorClear);
-  text_layer_set_text_color(DayText, GColorClear);
+  text_layer_set_text_color(DayText, GColorBlack);
   text_layer_set_text(DayText, "M T W T F S S");
   DayFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_Patinio_14));
   text_layer_set_font(DayText, DayFont);
@@ -141,9 +141,9 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DayText));
   
     // Line Text
-  LineText = text_layer_create(GRect(0, 88, 14, 14));
+  LineText = text_layer_create(GRect(0, 78, 14, 14));
   text_layer_set_background_color(LineText, GColorClear);
-  text_layer_set_text_color(LineText, GColorClear);
+  text_layer_set_text_color(LineText, GColorBlack);
   text_layer_set_text(LineText, "-");
   LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_Patinio_14));
   text_layer_set_font(LineText, LineFont);
@@ -151,9 +151,9 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(LineText));
   
     // Line Text 2
-  LineText2 = text_layer_create(GRect(0, 89, 14, 14));
+  LineText2 = text_layer_create(GRect(0, 78, 14, 14));
   text_layer_set_background_color(LineText2, GColorClear);
-  text_layer_set_text_color(LineText2, GColorClear);
+  text_layer_set_text_color(LineText2, GColorBlack);
   text_layer_set_text(LineText2, "-");
   text_layer_set_font(LineText2, LineFont);
   text_layer_set_text_alignment(LineText2, GTextAlignmentRight);
