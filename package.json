@@ -39,7 +39,19 @@
                 },
                 {
                     "file": "fonts/kimberley.ttf",
-                    "name": "font_kimberley_38",
+                    "name": "font_kimberley_40",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/kimberley.ttf",
+                    "name": "font_kimberley_42",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/kimberley.ttf",
+                    "name": "font_kimberley_44",
                     "targetPlatforms": null,
                     "type": "font"
                 },
@@ -51,7 +63,7 @@
                 },
                 {
                     "file": "fonts/kimberley.ttf",
-                    "name": "font_kimberley_44",
+                    "name": "font_kimberley_38",
                     "targetPlatforms": null,
                     "type": "font"
                 },
@@ -72,5 +84,5 @@
             "watchface": true
         }
     },
-    "version": "1.2.0"
+    "version": "1.3.0"
 }
