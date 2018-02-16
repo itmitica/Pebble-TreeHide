@@ -124,16 +124,16 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), (Layer *)Wallpaper);
  
   // Date Text
-  DateText = text_layer_create(GRect(0, 6, 138, 46));
+  DateText = text_layer_create(GRect(0, 10, 138, 46));
   text_layer_set_background_color(DateText, GColorClear);
   text_layer_set_text_color(DateText, GColorBlack);
-  DateFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_kimberley_28));
+  DateFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_kimberley_24));
   text_layer_set_font(DateText, DateFont);
   text_layer_set_text_alignment(DateText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DateText));
 
     // Day Text
-  DayText = text_layer_create(GRect(0, 38, 137, 26));
+  DayText = text_layer_create(GRect(0, 40, 137, 26));
   text_layer_set_background_color(DayText, GColorClear);
   text_layer_set_text_color(DayText, GColorBlack);
   text_layer_set_text(DayText, "M T W T F S S");
@@ -143,7 +143,7 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DayText));
   
     // Line Text
-  LineText = text_layer_create(GRect(0, 48, 14, 14));
+  LineText = text_layer_create(GRect(0, 50, 14, 14));
   text_layer_set_background_color(LineText, GColorClear);
   text_layer_set_text_color(LineText, GColorBlack);
   text_layer_set_text(LineText, "-");
@@ -162,10 +162,10 @@ void main_window_load(Window *window) {
 //   layer_add_child(window_get_root_layer(window), text_layer_get_layer(LineText2));
   
   // Time Text
-  TimeText = text_layer_create(GRect(0, 62, 138, 64));
+  TimeText = text_layer_create(GRect(0, 70, 138, 64));
   text_layer_set_background_color(TimeText, GColorClear);
   text_layer_set_text_color(TimeText, GColorBlack);
-  TimeFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_kimberley_42));
+  TimeFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_kimberley_38));
   text_layer_set_font(TimeText, TimeFont);
   text_layer_set_text_alignment(TimeText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(TimeText));
