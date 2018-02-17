@@ -14,6 +14,18 @@
         "resources": {
             "media": [
                 {
+                    "file": "images/screenshot_watchface.png",
+                    "name": "IMAGE_screenshot_watchface",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/screenshot_screenface.png",
+                    "name": "IMAGE_screenshot_screenface",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
                     "file": "images/wallpaper.png",
                     "name": "IMAGE_WALLPAPER",
                     "targetPlatforms": null,
@@ -39,7 +51,11 @@
                 },
                 {
                     "file": "fonts/kimberley.ttf",
+<<<<<<< HEAD
                     "name": "font_kimberley_44",
+=======
+                    "name": "font_kimberley_38",
+>>>>>>> 4d353d480c0b17c47473495cfc5a20d61e9b8773
                     "targetPlatforms": null,
                     "type": "font"
                 },
@@ -72,5 +88,9 @@
             "watchface": true
         }
     },
+<<<<<<< HEAD
     "version": "1.1.0"
+=======
+    "version": "1.4.0"
+>>>>>>> 4d353d480c0b17c47473495cfc5a20d61e9b8773
 }
