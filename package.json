@@ -20,6 +20,18 @@
                     "type": "bitmap"
                 },
                 {
+                    "file": "images/screenshot_watchface.png",
+                    "name": "IMAGE_SCREENSHOT_WATCHFACE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/screenshot_screenface.png",
+                    "name": "IMAGE_SCREENSHOT_SCREENFACE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
                     "file": "images/screenface.png",
                     "name": "IMAGE_SCREENFACE",
                     "targetPlatforms": null,
@@ -27,13 +39,19 @@
                 },
                 {
                     "file": "fonts/kimberley.ttf",
-                    "name": "font_kimberley_40",
+                    "name": "font_kimberley_44",
                     "targetPlatforms": null,
                     "type": "font"
                 },
                 {
                     "file": "fonts/kimberley.ttf",
                     "name": "font_kimberley_24",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/kimberley.ttf",
+                    "name": "font_kimberley_38",
                     "targetPlatforms": null,
                     "type": "font"
                 },
@@ -54,5 +72,5 @@
             "watchface": true
         }
     },
-    "version": "1.3.0"
+    "version": "1.1.0"
 }

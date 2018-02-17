@@ -9,7 +9,6 @@ static GBitmap *s_res_image_screenface;
 static BitmapLayer *Screenface;
 
 TextLayer *TimeText;
-TextLayer *TimeText2;
 TextLayer *DateText;
 TextLayer *DayText;
 TextLayer *LineText;
@@ -61,19 +60,19 @@ void update_date() {
     int weekdaytowidth = 0;
   
     if (today == 6) {
-      weekdaytowidth = 130;
+      weekdaytowidth = 140;
     } else if(today == 5) {
-      weekdaytowidth = 113;
+      weekdaytowidth = 123;
     } else if (today == 4) {
-      weekdaytowidth = 94;
+      weekdaytowidth = 104;
     } else if (today == 3) {
-      weekdaytowidth = 79;
+      weekdaytowidth = 89;
     } else if (today == 2) {
-      weekdaytowidth = 62;
+      weekdaytowidth = 72;
     } else if (today == 1) {
-      weekdaytowidth = 45;
+      weekdaytowidth = 55;
     } else {
-      weekdaytowidth = 28; //38
+      weekdaytowidth = 38; //38
     }
     
     text_layer_set_size(LineText, GSize(weekdaytowidth, 14));
@@ -103,7 +102,6 @@ void update_time() {
   
   // Display this time on the TextLayer
   text_layer_set_text(TimeText, time);
-  text_layer_set_text(TimeText2, time);
   
   if (tick_time->tm_hour == 0) {
     update_date();
@@ -124,18 +122,18 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), (Layer *)Wallpaper);
  
   // Date Text
-  DateText = text_layer_create(GRect(0, 31, 130, 46));
+  DateText = text_layer_create(GRect(0, 45, 140, 46));
   text_layer_set_background_color(DateText, GColorClear);
-  text_layer_set_text_color(DateText, GColorBlack);
+  text_layer_set_text_color(DateText, GColorClear);
   DateFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_kimberley_24));
   text_layer_set_font(DateText, DateFont);
   text_layer_set_text_alignment(DateText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DateText));
 
     // Day Text
-  DayText = text_layer_create(GRect(0, 69, 130, 26));
+  DayText = text_layer_create(GRect(0, 78, 140, 26));
   text_layer_set_background_color(DayText, GColorClear);
-  text_layer_set_text_color(DayText, GColorBlack);
+  text_layer_set_text_color(DayText, GColorClear);
   text_layer_set_text(DayText, "M T W T F S S");
   DayFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_Patinio_14));
   text_layer_set_font(DayText, DayFont);
@@ -143,9 +141,9 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DayText));
   
     // Line Text
-  LineText = text_layer_create(GRect(0, 79, 14, 14));
+  LineText = text_layer_create(GRect(0, 88, 14, 14));
   text_layer_set_background_color(LineText, GColorClear);
-  text_layer_set_text_color(LineText, GColorBlack);
+  text_layer_set_text_color(LineText, GColorClear);
   text_layer_set_text(LineText, "-");
   LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_Patinio_14));
   text_layer_set_font(LineText, LineFont);
@@ -153,31 +151,23 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(LineText));
   
     // Line Text 2
-  LineText2 = text_layer_create(GRect(0, 79, 14, 14));
+  LineText2 = text_layer_create(GRect(0, 89, 14, 14));
   text_layer_set_background_color(LineText2, GColorClear);
-  text_layer_set_text_color(LineText2, GColorBlack);
+  text_layer_set_text_color(LineText2, GColorClear);
   text_layer_set_text(LineText2, "-");
   text_layer_set_font(LineText2, LineFont);
   text_layer_set_text_alignment(LineText2, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(LineText2));
   
   // Time Text
-  TimeText = text_layer_create(GRect(0, 112, 138, 64));
+  TimeText = text_layer_create(GRect(0, 107, 140, 64));
   text_layer_set_background_color(TimeText, GColorClear);
-  text_layer_set_text_color(TimeText, GColorBlack);
-  TimeFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_kimberley_40));
+  text_layer_set_text_color(TimeText, GColorClear);
+  TimeFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_kimberley_44));
   text_layer_set_font(TimeText, TimeFont);
   text_layer_set_text_alignment(TimeText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(TimeText));
   
-  // Time Text 2
-  TimeText2 = text_layer_create(GRect(0, 107, 133, 64));
-  text_layer_set_background_color(TimeText2, GColorClear);
-  text_layer_set_text_color(TimeText2, GColorClear);
-//   TimeFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_font_kimberley_44));
-  text_layer_set_font(TimeText2, TimeFont);
-  text_layer_set_text_alignment(TimeText2, GTextAlignmentRight);
-  layer_add_child(window_get_root_layer(window), text_layer_get_layer(TimeText2));  
   
   // Screenface
   Screenface = bitmap_layer_create(GRect(0, 0, 144, 168));
@@ -194,7 +184,6 @@ void main_window_load(Window *window) {
 void main_window_unload(Window *window) {
   // Destroy TextLayer
   text_layer_destroy(TimeText);
-  text_layer_destroy(TimeText2);
   text_layer_destroy(DateText);
   text_layer_destroy(DayText);
   text_layer_destroy(LineText);
